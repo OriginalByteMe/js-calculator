@@ -16,44 +16,46 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container">
-            <div class="screen">
-                <!-- Screen display goes here for answers and numbers -->
-                This is just a test for the display
+        <main id="calculator">
+
+        
+            <div class="container">
+                <div class="screen">
+                    <!-- Screen display goes here for answers and numbers -->
+                    This is just a test for the display
+                </div>
+                <div class="numpad">
+                    <div class="row">
+                        <button class="function" type="button" value="clear">C</button>
+                        <button class="function" type="button" value="percent">%</button>
+                        <button class="function" type="button" value="/">÷</button>
+                    </div>
+                    <div class="row">
+                        <button class="operand" type="button" value="7">7</button>
+                        <button class="operand" type="button" value="8">8</button>
+                        <button class="operand" type="button" value="9">9</button>
+                        <button class="operator" type="button" value="*">X</button>
+                    </div>
+                    <div class="row">
+                        <button class="operand" type="button" value="4">4</button>
+                        <button class="operand" type="button" value="5">5</button>
+                        <button class="operand" type="button" value="6">6</button>
+                        <button class="operator" type="button" value="-">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="operand" type="button" value="1">1</button>
+                        <button class="operand" type="button" value="2">2</button>
+                        <button class="operand" type="button" value="3">3</button>
+                        <button class="operator" type="button" value="+">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="zero" type="button" value="0">0</button>
+                        <button class="decimal" type="button" value=".">.</button>
+                        <button class="operator" type="button" value="=">=</button>
+                    </div>
+                </div>
             </div>
-            <div class="numpad">
-                <div class="numpad-row">
-                    <div class="numpad-button">C</div>
-                    <div class="numpad-button">%</div>
-                    <div class="numpad-button">Clear</div>
-                    <div class="numpad-button">÷</div>
-                </div>
-                <div class="numpad-row">
-                    <div class="numpad-button">7</div>
-                    <div class="numpad-button">8</div>
-                    <div class="numpad-button">9</div>
-                    <div class="numpad-button">X</div>
-                </div>
-                <div class="numpad-row">
-                    <div class="numpad-button">4</div>
-                    <div class="numpad-button">5</div>
-                    <div class="numpad-button">6</div>
-                    <div class="numpad-button">-</div>
-                </div>
-                <div class="numpad-row">
-                    <div class="numpad-button">1</div>
-                    <div class="numpad-button">2</div>
-                    <div class="numpad-button">3</div>
-                    <div class="numpad-button">+</div>
-                </div>
-                <div class="numpad-row">
-                    <div class="numpad-button">00</div>
-                    <div class="numpad-button">0</div>
-                    <div class="numpad-button">.</div>
-                    <div class="numpad-button">=</div>
-                </div>
-            </div>
-        </div>
+        </main>
         <script src="app.js" async defer></script>
     </body>
 </html>
