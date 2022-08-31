@@ -7,7 +7,6 @@ let result = null;
 
 const buttons = document.querySelectorAll('button');
 
-
 function updateScreen(){
     let screen = document.getElementById('screen');
     if(screenValue.length > 9){
@@ -16,7 +15,7 @@ function updateScreen(){
     screen.innerText = screenValue;
     
 }
-updateScreen();
+
 
 
 function buttonClicks(){
@@ -45,7 +44,6 @@ function buttonClicks(){
         } 
     )}
 }
-buttonClicks();
 
 
 function inputOperand(value){
@@ -152,3 +150,8 @@ function operate(operator, num1, num2){
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
+
+
+
+buttonClicks();
+updateScreen();
