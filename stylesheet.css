@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font: 100 14px 'Mono';
+    font: 'Mono';
     background-color: #374151;
 }
 
@@ -19,37 +19,56 @@ body {
     display:grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto) repeat(5, 80px);
-    gap: 2px;
+    gap: 1rem;
     background-color: #1f2937;
-    
+    padding: 1.5rem;
 }
 
 #screen{
-    padding: 5px;
+    padding: 2rem;
     margin: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     font-weight: initial;
     font-size: 5.5em;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     grid-column-start: 1;
     grid-column-end: -1;
-    color: white;
+    color: #60a5fa;
+    border-bottom: solid #111827;
+    border-bottom-width: 5px;
+    outline: none;
 }
 
 button{
     display: block;
-    background: #9ca3af;
-    border-radius: 20px;
+    background: #6e737c;
+    border-radius: 9999px;
     border: none;
     font-weight: initial;
     color: #1f2937;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
 }
 
+button.operator{
+    background-color: #8c75d3;
+}
 
+.percent{
+    background-color: #8c75d3;
+}
+.equals{
+    background-color: #8c75d3;
+}
+.decimal{
+    background: #da0e20;
+}
 .clear{
     grid-column: span 2;
+    background: #4c83c6;
 }
 #zero{
     grid-column: span 2;
+    background: #4c83c6;
 }
