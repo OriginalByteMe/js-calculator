@@ -37,6 +37,9 @@ function buttonClicks(){
             } else if(buttons[i].classList.contains('clear')){
                 clearScreen();
                 updateScreen();
+            } else if(buttons[i].classList.contains('percent')){
+                inputPercent(Number(screenValue));
+                updateScreen();
             }
         } 
     )}
@@ -111,6 +114,10 @@ function inputDecimal(dot){
     if(!screenValue.includes('.')){
         screenValue += dot;
     }
+}
+
+function inputPercent(num){
+    screenValue = (num / 100).toString();
 }
 
 function clearScreen(){
