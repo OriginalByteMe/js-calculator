@@ -10,10 +10,11 @@ const buttons = document.querySelectorAll('button');
 
 function updateScreen(){
     let screen = document.getElementById('screen');
-    screen.innerText = screenValue;
-    if(screen.length > 10){
-        screen.innerText = screen.substring(0, 10);
+    if(screenValue.length > 9){
+        screenValue = screenValue.substring(0, 8);
     }
+    screen.innerText = screenValue;
+    
 }
 updateScreen();
 
